@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  max-width: 940px;
+  min-height: 650px;
+  margin: 0 auto;
+}
+
+body {
+  color: #fff;
+  font-family: ubuntu;
+  font-weight: 400;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  font-family: ubuntu;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  background-color: #e45028;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.first-screen {
+  display: flex;
+  background-image: url(/img/first-section-bg.jpg);
+}
+
+.wrapper-first {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.38%;
+}
+
+.header__menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu__item {
+  display: inline;
+  margin-right: 32px;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: .8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu__link:after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(100% + 16px);
+}
+
+.menu__item:last-child .menu__link:after {
+  display: none;
+}
+
+.header__btn--hover:hover {
+  background-color: #c1401e;
+}
+
+.first__main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.first__left {
+  padding: 20px;
+}
+
+.first__right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.first__subtitle {
+  font-family: lifehack;
+  font-size: 4.0625rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.main-title {
+  font-family: gagalin;
+  font-size: 4.5rem;
+  color: #f9b43b;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.first__footer {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.we {
+  background-image: url(../img/we-section-bg.jpg);
+  background-size: 100% 100%;
+}
+
+.we__title__text {
+  color: #2f3234;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.we__list {
+  display: flex;
+  margin-top: 11%;
+}
+
+.we__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.we__list__item__img {
+  margin-bottom: 10%;
+}
+
+.we__list__item__title {
+  color: #2f3234;
+  font-family: lifehack;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.we__list__item__desc {
+  color: #2f3234;
+  font-size: 0.875rem;
+  font-family: ubuntu;
+  text-align: center;
+  line-height: 2;
+}
+
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback__item {
+  width: 25%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item:nth-child(1) {
+  background-image: url(../img/feedback-photo-1.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(2) {
+  background-image: url(../img/feedback-photo-2.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(3) {
+  background-image: url(../img/feedback-photo-3.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(4) {
+  background-image: url(../img/feedback-photo-4.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(5) {
+  background-image: url(../img/feedback-photo-5.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(6) {
+  background-image: url(../img/feedback-photo-6.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(7) {
+  background-image: url(../img/feedback-photo-7.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__item:nth-child(8) {
+  background-image: url(../img/feedback-photo-8.jpg);
+  filter: grayscale(100%);
+}
+
+.feedback__about {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px 0 20px;
+}
+
+.feedback__item:hover .feedback__about {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback__title {
+  color: #fff;
+  font-family: gagalin;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding-bottom: 30px;
+}
+
+.feedback__desc {
+  color: #fff;
+  font-family: ubuntu;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.feedback__btn {
+  font-family: ubuntu;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn--feedback {
+  color: #fff;
+  background-color: #2f3234;
+  border-radius: 5px;
+  padding: 13px 14px;
+}
+
+.btn--feedback:hover {
+  background-color: #1f2122;
+}
