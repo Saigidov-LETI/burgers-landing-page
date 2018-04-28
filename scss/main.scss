@@ -234,3 +234,113 @@ body {
         background-color: #1f2122;
     }
 }
+
+.burgers {
+    background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+}
+
+.wrapper-burgers {
+    display: flex;
+    flex: 1;
+}
+
+.burgers__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgers__item {
+    display: flex;
+    position: relative;
+}
+
+.burgers__item__left {
+    display: flex;
+    flex: 1;
+}
+
+.burgers__img {
+    max-height: 329px;    
+}
+
+.burgers__item__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.burgers__title__text {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 9%;
+}
+
+.burgers__desc {
+    @include font-size(14px);
+    line-height: 1.5; 
+}
+
+.burgers__desc p {
+    margin-bottom: 6%;
+}
+
+.burgers__price-btn {
+    font-family: gagalin;
+    color: #e35028;
+    display: flex;
+    align-items: flex-end;
+}
+
+.burgers__price-btn span {
+    @include font-size(72px);
+    line-height: 1;
+    padding-right: 10px;
+}
+
+.burgers__price-btn p {
+    @include font-size(30px);
+    padding-right: 30px;
+}
+
+.burgers__composition {
+    position: absolute;
+    background-color: #f08c33;
+    padding: 14px 22px 0 22px;
+    border-radius: 5px;
+    bottom: 100%;
+}
+
+.composition__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.composition__title p {
+    font-family: gagalin;
+    @include font-size(14px);
+    padding-bottom: 8px;
+}
+
+.burgers__weigth {
+    position: absolute;
+    top: 100%;
+    font-family: gagalin;
+    @include font-size(20px);
+}
+
+.weigth__variable {
+    position: absolute;
+    top: 25px;
+    left: 14px;
+}
+
+.weigth__title {
+    font-size: remy(14);
+    text-align: center;
+}
