@@ -1,0 +1,42 @@
+.we {
+    background-image: url(../img/bg/we-section-bg.jpg);
+    background-size: 100% 100%;
+}
+
+.we__title__text {
+    color: #2f3234;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.we__list {
+    display: flex;
+    margin-top: 11%;
+}
+
+.we__list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.we__list__item__img {
+    margin-bottom: 10%;
+}
+
+.we__list__item__title {
+    color: #2f3234;
+    font-family: lifehack;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.we__list__item__desc {
+    color: #2f3234;
+    font-size: rem(14px);
+    font-family: ubuntu;
+    text-align: center;
+    line-height: 2;
+}

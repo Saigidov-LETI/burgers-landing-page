@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 940px;
+    min-height: 650px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    font-family: ubuntu;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    background-color: #e45028;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

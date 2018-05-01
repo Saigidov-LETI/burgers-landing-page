@@ -27,6 +27,8 @@ td, form { margin: 0px; padding: 0px; }
 
 a { color: #000100; -webkit-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; text-decoration: none; outline: none; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; }
 
+ul { margin: 0; padding: 0; list-style: none; }
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 

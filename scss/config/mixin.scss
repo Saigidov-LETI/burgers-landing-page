@@ -7,6 +7,6 @@
     font-size: convert_font($size);
 }
 
-@function remy($pxsize) {
-    @return ($pxsize / 16)+rem; 
+@function rem($pxsize) {
+    @return $pxsize / 16px + rem; 
 }
