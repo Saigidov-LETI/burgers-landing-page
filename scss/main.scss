@@ -1,4 +1,5 @@
 @import "config/mixin.scss";
+@import "config/media.scss";
 @import "config/variables.scss";
 
 @import "layout/fonts.scss";
@@ -9,3 +10,7 @@
 @import "section/we.scss";
 @import "section/feedback.scss";
 @import "section/burgers.scss";
+@import "section/team.scss";
+@import "section/menu-section.scss";
+@import "section/order.scss";
+@import "section/contacts.scss";

@@ -1,0 +1,143 @@
+.team {
+    background-image: url(../img/bg/team-section.jpg);
+}
+
+.team-content {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    opacity: .93;
+    background-color: #2f3234;
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.team-title {
+    padding: 20% 0 6.144% 20%;
+
+    @include tablets {
+        padding: 0 0 5% 0;
+    }
+    
+}
+
+.team-members {
+    padding-left: 20%;
+
+    @include tablets {
+        padding-left: 0;
+        
+    }
+}
+
+.team-members__item {
+    margin-bottom: 5.376%;
+    font-family: gagalin;
+    font-size: rem(14px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &.active {
+        @include tablets {
+            
+        }
+        
+        .team-members__content {
+            display: flex;
+
+            @include tablets {
+                flex-direction: column;
+                align-items: center;
+                margin-top: -20px;
+            }
+           
+        }
+
+        .team-members__name {
+            color: #f9b43b;
+        }
+
+        .team-members__name::before {
+            display: inline-block;
+            content: "";
+            margin-right: 10px;
+            border: 5px solid transparent;	
+            border-left: 5px solid #f9b43b;
+        }
+    }
+}
+
+.team-members__title {
+    display: flex;   
+    cursor: pointer;
+}
+
+.team-members__name {
+    padding-bottom: 2.88%;
+
+    @include tablets {
+        padding-bottom: 25px;
+    }
+
+    @include phones {
+        font-size: rem(24px);
+    }
+
+    &::before {
+        display: inline-block;
+        content: "";
+        margin-right: 10px;
+        border: 5px solid transparent;	
+        border-top: 5px solid #f9b43b;
+    }
+}
+
+.team-members__content {
+    display: none;
+}
+
+.team-members__photo {
+    padding-right: 3.85%;
+    
+    @include tablets {
+        padding-right: 0;
+        padding-bottom: 2%;
+    }
+}
+
+.team-members__about {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.team-members__job {
+    font-family: ubuntu;
+    font-weight: 700;
+    padding-bottom: 3.75%;
+}
+
+.team-members__desc {
+    width: 70%;
+    font-weight: 300;
+    font-family: ubuntu;
+    font-size: 14px;
+
+    @include tablets {
+        text-align: center;
+    }
+}

@@ -1,17 +1,41 @@
 .we {
+    display: flex;
     background-image: url(../img/bg/we-section-bg.jpg);
     background-size: 100% 100%;
+
+    @include phones {
+        display: block;
+    }
+}
+
+.wrapper-we {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+        justify-content: flex-start;
+        padding-top: 25%;
+    }
+
+    @include phones {
+        justify-content: center;
+        padding-top: 0;
+    }
 }
 
 .we__title__text {
     color: #2f3234;
-    padding-top: 10%;
     text-align: center;
 }
 
 .we__list {
     display: flex;
-    margin-top: 11%;
+    margin-top: 5%;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .we__list__item {
@@ -19,10 +43,22 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+
+    @include phones {
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 15%;
+
+    }
 }
 
 .we__list__item__img {
     margin-bottom: 10%;
+    display: flex;
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .we__list__item__title {
@@ -30,7 +66,13 @@
     font-family: lifehack;
     font-size: 1.5rem;
     text-align: center;
+    display: flex;
     
+    @include phones {
+        position: absolute; 
+        top: 0;
+        left: 25%;   
+    }
 }
 
 .we__list__item__desc {
@@ -39,4 +81,13 @@
     font-family: ubuntu;
     text-align: center;
     line-height: 2;
+    display: flex;
+
+    @include phones {
+        text-align: left;
+        position: absolute;
+        left: 25%;
+        top: 34%;
+        line-height: 1.42;
+    }
 }

@@ -1,5 +1,23 @@
+html {
+    @include desktop {
+        font-size: rem(16px);
+    }
+
+    @include laptop {
+        font-size: rem(15px);
+    }
+
+    @include tablets {
+        font-size: rem(14px);
+    }
+
+    @include phones {
+        font-size: rem(13px);
+    }
+}
+
 body {
     color: #fff;
     font-family: ubuntu;
     font-weight: 400;
-}
+}  
