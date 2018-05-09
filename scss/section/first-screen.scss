@@ -88,15 +88,31 @@
 
     @include tablets {
         padding: 0;
+        width: 50%;
     }
+
+    @include phones {
+        width: 70%;
+    }
+}
+
+.first__img {
+    width: 100%;
 }
 
 .first__right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 5%;
+
+    @include tablets {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include phones {
+        
+    }
 }
 
 .first__subtitle {

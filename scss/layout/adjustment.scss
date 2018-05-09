@@ -12,6 +12,11 @@
         max-width: 450px;
         height: 100vh;
     }
+
+    @include old-phones {
+        min-width: 320px;
+        height: 100vh;
+    }
 }
 
 .section {
@@ -19,10 +24,6 @@
     min-height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include tablets {
-        // min-height: 100vh;
-    }
 }
 
 .btn {

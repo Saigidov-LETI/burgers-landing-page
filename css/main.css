@@ -64,6 +64,12 @@
   }
 }
 
+@media (min-width: 320px) {
+  html {
+    font-size: 0.8125rem;
+  }
+}
+
 body {
   color: #fff;
   font-family: ubuntu;
@@ -86,6 +92,13 @@ body {
 @media (max-width: 480px) {
   .wrapper {
     max-width: 450px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 320px) {
+  .wrapper {
+    min-width: 320px;
     height: 100vh;
   }
 }
@@ -212,15 +225,31 @@ body {
 @media (max-width: 768px) {
   .first__left {
     padding: 0;
+    width: 50%;
   }
+}
+
+@media (max-width: 480px) {
+  .first__left {
+    width: 70%;
+  }
+}
+
+.first__img {
+  width: 100%;
 }
 
 .first__right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .first__right {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .first__subtitle {
