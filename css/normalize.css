@@ -5,7 +5,7 @@ html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body { margin: 0; padding: 0;  line-height: 1.42; background-color: #ffffff; height: 100%; position: relative; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { margin: 0; padding: 0;  line-height: 1.42; background-color: #ffffff; height: 100%; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 blockquote, q { quotes: none; }
 

@@ -41,7 +41,7 @@
     }
 
     @include tablets {
-        left: 20%;
+        left: 18%;
     }
 
     @include phones {
@@ -67,10 +67,19 @@
     border-radius: 5px;
     position: absolute;
     opacity: .9;
-    // width: 270px;
     width: 300%;      
     top: 0;
     left: 90px;
+
+    @include tablets {
+        left: 79px;
+        width: 403%;
+    }
+
+    @include phones {
+        left: 67px;
+        width: 383px;
+    }
 }
 
 .burgers__composition:hover .burgers__composition-list {
@@ -80,10 +89,10 @@
 .composition-list__item {
     display: flex;
     align-items: center;
-    margin-bottom: 5.55%;
+    margin-bottom: 1rem;
 
     &:nth-child(1) {
-        margin-top: 6.66%;
+        margin-top: 1rem;
     }
 }
 
@@ -117,7 +126,6 @@
 
 .composition-list__img {
     padding: 0 9.259%;
-
 }
 
 .composition-list__item__text {
@@ -125,6 +133,48 @@
     flex: 1;
     justify-content: space-between;
     padding-right: 7.407%;
+
+    @include tablets {
+        padding-right: 20%;
+    }
+}
+
+.composition-list-close {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    position: absolute;
+    right: 8px;
+    transform: rotate(45deg);
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.close__part {
+    &-1 {
+        @include tablets {  
+            width: 20px;
+            height: 4px;
+            border-radius: 5px;
+            background-color: rgb(227, 80, 40);              
+        }
+    }
+    &-2 {
+        @include tablets {
+            width: 4px;
+            height: 20px;
+            position: absolute;
+            right: 13px;
+            border-radius: 5px;
+            background-color: rgb(227, 80, 40);          
+        }
+    }
 }
 
 .composition-list__title {
@@ -149,8 +199,8 @@
     font-size: rem(20px);
 
     @include tablets {
-        right: 25%;
-        top: -10%;
+        right: 18%;
+        top: -13%;
     }
 
     @include phones {

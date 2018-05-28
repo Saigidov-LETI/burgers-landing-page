@@ -6,12 +6,12 @@ $(document).ready(function(){
             title = $this.closest('.team-members__title'),
             content = $(document).find('.team-members__content');
             item = $(document).find('.team-members__item');
-            // for (var i = 0; i < 5; i++ ) {
-            //     if (item[i].hasClass('active')) {
-            //         console.log(item[i]);
-            //         $this.removeClass('active');
-            //     }     
-            // }
-        title.parent('.team-members__item').toggleClass('active');
+        
+        if (title.parent('.team-members__item').hasClass('active')) {
+            title.parent('.team-members__item').removeClass('active');
+        } else {
+            $('.team-members__title').parent().removeClass('active');
+            title.parent('.team-members__item').addClass('active') ;
+        }
     });
 });

@@ -1,5 +1,14 @@
 .team {
     background-image: url(../img/bg/team-section.jpg);
+
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/team-bg.jpg);
+    }
+
+    @include phones {
+        background-image: url(../img/bg/bg-for-phones/team-bg.jpg);
+    }
+
 }
 
 .team-content {

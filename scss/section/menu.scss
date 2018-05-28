@@ -2,6 +2,14 @@
 .menu-section {
     position: relative;
     background-image: url(../img/bg/menu-section-bg.jpg);
+
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/menu-bg.jpg);
+    }
+
+    @include phones {
+        background-image: url(../img/bg/bg-for-phones/menu-bg.jpg);
+    }
 }
 
 .menu-section__title {

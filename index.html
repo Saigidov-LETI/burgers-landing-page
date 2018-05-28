@@ -7,46 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="first-screen section">
         <div class="wrapper wrapper-first">
-            <header class="header">
-                <div class="header__logo">
-                    <a href="#" class="header__logo__link">
-                        <img src="img/logo.png" alt="" class="header__logo__img">
-                    </a>
-                </div> 
-                <div class="header__menu">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">О нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Бургеры</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Команда</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Меню</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__btn">
-                    <a href="" class="btn header__btn--hover">Заказать</a>
-                </div>
-                <!-- <div class="hamburger-menu">
-
-                </div> -->
+            <header class="header" id="header-id">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="" class="header__logo__img">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Бургеры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Меню</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn header__btn">Заказать</a>
+                <a href="#" class="hamburger-container js-hamburger-menu">
+                    <span class="hamburger-menu--noactive">hamburger-menu</span>
+                    <span class="hamburger-menu--active">hamburger-menu</span>
+                </a>
             </header>
             <div class="first__main">
                 <div class="first__left">
@@ -63,6 +57,7 @@
                 </a>
             </div>
         </div>
+        <script src="js/hamburger-menu.js"></script>
     </div>
     <section class="we section">
         <div class="wrapper wrapper-we">
@@ -154,6 +149,12 @@
                                     <span class="composition-list__weigth">80 г</span>
                                 </div>
                             </div>
+                            <div class="composition-list-close">
+                                <a href="" class="composition-list-close__btn">
+                                    <div class="close__part-1"></div>
+                                    <div class="close__part-2"></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="burgers__weigth">
@@ -168,7 +169,7 @@
                     </div>
                     <div class="burgers__right">
                         <div class="burgers__title">
-                            <h2 class="burgers__title__text main-title">Dark beef burger</h2>
+                            <h2 class="burgers__title__text main-title">Dark beef <br> burger</h2>
                         </div>
                         <div class="burgers__desc">
                             <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
@@ -538,7 +539,13 @@
             </form>
         </div>
     </section>
-    <div class="contacts section">
+    <div id="map" class="contact section">
+        <div class="map">
+            <script src="js/map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4zAJs_VfVPD2vv9IvHVRe2PKJ0x49Mg&callback=initMap">
+            </script>
+        </div>
         <footer class="footer">
             <div class="footer__wrap">
                 <div class="footer__contact">
@@ -547,35 +554,35 @@
                 </div>
                 <div class="footer__social">
                     <ul class="footer__social-list">
-                            <li class="footer__social-item">
-                                <a class=" footer__social-icon" href="#" title="вконтакте">
-                                    <svg class="svgicon" width="26" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a class=" footer__social-icon" href="#" title="фейсбук">
-                                    <svg class="svgicon" width="26" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a class=" footer__social-icon" href="#" title="инстаграмм">
-                                    <svg class="svgicon" width="26" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#inst"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a class=" footer__social-icon" href="#" title="твиттер">
-                                    <svg class="svgicon" width="26" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <li class="footer__social-item">
+                            <a class=" footer__social-icon" href="#" title="вконтакте">
+                                <svg class="svgicon" width="26" height="20">
+                                    <use xlink:href="img/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class=" footer__social-icon" href="#" title="фейсбук">
+                                <svg class="svgicon" width="26" height="20">
+                                    <use xlink:href="img/icons/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class=" footer__social-icon" href="#" title="инстаграмм">
+                                <svg class="svgicon" width="26" height="20">
+                                    <use xlink:href="img/icons/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class=" footer__social-icon" href="#" title="твиттер">
+                                <svg class="svgicon" width="26" height="20">
+                                    <use xlink:href="img/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

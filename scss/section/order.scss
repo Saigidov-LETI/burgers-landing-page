@@ -1,6 +1,14 @@
 .order {
     background-image: url(../img/bg/order-section-bg.jpg);
     display: flex;
+
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/order-bg.jpg);
+    }
+
+    @include phones {
+        background-image: url(../img/bg/bg-for-phones/order-bg.jpg);
+    }
 }
 
 .wrapper-order {

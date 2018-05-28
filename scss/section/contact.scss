@@ -1,20 +1,21 @@
-.contacts {
-    background-image: url(../img/bg/contacts-section.jpg);
-    position: relative;
+.map {
     
     @include tablets {
         background-size: auto;
     }
 }
 
+.one {
+    display: block;
+    // position: absolute;
+    height: 100px;
+}
+
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
     background-image: url(../img/bg/footer-section-bg.jpg);
     background-position: center;
     background-size: cover;
+   
 }
 
 .footer__wrap {

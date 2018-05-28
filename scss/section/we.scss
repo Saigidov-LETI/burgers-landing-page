@@ -3,8 +3,13 @@
     background-image: url(../img/bg/we-section-bg.jpg);
     background-size: 100% 100%;
 
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/we-bg.jpg);
+    }
+
     @include phones {
         display: block;
+        background-image: url(../img/bg/bg-for-phones/we-bg.jpg);
     }
 }
 
