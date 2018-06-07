@@ -7,9 +7,33 @@
     display: flex;
 }
 
+.owl-carousel.owl-loaded {
+    margin: auto;
+}
+
 .wrapper-burgers {
     display: flex;
     flex: 1;
+}
+
+.burgers-button {
+    position: absolute;
+    height: 100%;
+    width: 940px;
+}
+
+.burgers__arows-left {
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.burgers__arows-right {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: rotate(-90deg);
 }
 
 .burgers__list {
@@ -223,6 +247,7 @@
 .burgers__left {
     display: flex;
     flex: 1;
+    margin-right: 50px;
 
     @include tablets {
         padding-bottom: 5%;
@@ -235,11 +260,18 @@
 
 .burgers__img {   
     max-height: 329px;
+    position: absolute;
+    top: 3%;
 
     @include phones {
         width: 80%;
         height: 50%;
     }
+}
+
+
+.owl-carousel .owl-item img {  
+    width: auto !important; 
 }
 
 .burgers__right {
@@ -301,10 +333,10 @@
 .burgers__price-btn span {
     font-size: rem(72px);
     line-height: 1;
-    padding-right: 2.128%;
+    padding-right: 10px;
 }
 
 .burgers__price-btn p {
     font-size: rem(30px);
-    padding-right: 6.38%;
+    padding-right: 30px;
 }

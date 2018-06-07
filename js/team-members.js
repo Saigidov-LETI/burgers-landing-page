@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.team-members__title').on('click', function(e){
         e.preventDefault();
 

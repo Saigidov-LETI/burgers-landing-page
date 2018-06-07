@@ -690,9 +690,33 @@ body.active, html.active {
   display: flex;
 }
 
+.owl-carousel.owl-loaded {
+  margin: auto;
+}
+
 .wrapper-burgers {
   display: flex;
   flex: 1;
+}
+
+.burgers-button {
+  position: absolute;
+  height: 100%;
+  width: 940px;
+}
+
+.burgers__arows-left {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  transform: rotate(90deg);
+}
+
+.burgers__arows-right {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: rotate(-90deg);
 }
 
 .burgers__list {
@@ -920,6 +944,7 @@ body.active, html.active {
 .burgers__left {
   display: flex;
   flex: 1;
+  margin-right: 50px;
 }
 
 @media (max-width: 768px) {
@@ -936,6 +961,8 @@ body.active, html.active {
 
 .burgers__img {
   max-height: 329px;
+  position: absolute;
+  top: 3%;
 }
 
 @media (max-width: 480px) {
@@ -943,6 +970,10 @@ body.active, html.active {
     width: 80%;
     height: 50%;
   }
+}
+
+.owl-carousel .owl-item img {
+  width: auto !important;
 }
 
 .burgers__right {
@@ -1010,12 +1041,12 @@ body.active, html.active {
 .burgers__price-btn span {
   font-size: 4.5rem;
   line-height: 1;
-  padding-right: 2.128%;
+  padding-right: 10px;
 }
 
 .burgers__price-btn p {
   font-size: 1.875rem;
-  padding-right: 6.38%;
+  padding-right: 30px;
 }
 
 .team {
@@ -1337,7 +1368,7 @@ body.active, html.active {
   height: 35px;
   border-radius: 5px;
   border: transparent;
-  padding-left: 9%;
+  padding-left: 20px;
   font-family: ubuntu;
   font-weight: 300;
   font-size: 0.875rem;
@@ -1506,12 +1537,12 @@ body.active, html.active {
 }
 
 @media (max-width: 768px) {
-  .map {
+  .contact {
     background-size: auto;
   }
 }
 
-.one {
+.map {
   display: block;
   height: 100px;
 }

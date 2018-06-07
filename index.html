@@ -7,7 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.css">
+    <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+    
 </head>
 <body>
     <div class="first-screen section">
@@ -97,7 +100,15 @@
     </section>
     <section class="burgers">
         <div class="wrapper wrapper-burgers">
-            <div class="burgers__list">
+            <div class="burgers-button">
+                <a href="#" class="burgers__arows-left" id="arrow-left">
+                    <img src="img/icons/arrow-scroll.svg" alt="" class="arrows__scroll">
+                </a>
+                <a href="#" class="burgers__arows-right" id="arrow-right">
+                    <img src="img/icons/arrow-scroll.svg" alt="" class="arrows__scroll">
+                </a>
+            </div>
+            <div class="burgers__list owl-carousel" id="burgers">
                 <div class="burgers__item">
                     <div class="burgers__composition">
                         <div class="composition__logo">
@@ -172,7 +183,7 @@
                             <h2 class="burgers__title__text main-title">Dark beef <br> burger</h2>
                         </div>
                         <div class="burgers__desc">
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                            <p>1 Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
                                 нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
                                 с добавлением экзотического соуса чураско.
                             </p>
@@ -184,7 +195,268 @@
                         </div>
                     </div>
                 </div>
+                <div class="burgers__item">
+                    <div class="burgers__composition">
+                        <div class="composition__logo">
+                            <img src="img/icons/burger.svg" alt="" class="composition__logo__img">
+                        </div>
+                        <div class="composition__title">
+                            <p>Состав</p>
+                        </div>
+                        <div class="burgers__composition-list">
+                            <div class="composition-list__item">
+                                <img src="img/icons/beef.svg" alt="" class="composition-list__img">                    
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Говядина</p>
+                                    <span class="composition-list__weigth">300 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/buns.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Булочки</p>
+                                    <span class="composition-list__weigth">100 г</span>  
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/salad.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Зелень</p>
+                                    <span class="composition-list__weigth">70 г</span>
+                                </div>
+                            </div> 
+                            <div class="composition-list__item">
+                                <img src="img/icons/sauce.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Соус</p>
+                                    <span class="composition-list__weigth">150 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/cucumber.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Овощи</p>
+                                    <span class="composition-list__weigth">200 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/cheese.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Сыр</p>
+                                    <span class="composition-list__weigth">80 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list-close">
+                                <a href="" class="composition-list-close__btn">
+                                    <div class="close__part-1"></div>
+                                    <div class="close__part-2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burgers__weigth">
+                        <div class="weigth__logo">
+                            <img src="img/icons/kkal.svg" alt="" class="weigth__logo__img">
+                        </div>
+                        <div class="weigth__variable">1200</div>
+                        <div class="weigth__title">ккал</div>
+                    </div>
+                    <div class="burgers__left">
+                        <img src="img/content/burger-img.png" alt="" class="burgers__img">
+                    </div>
+                    <div class="burgers__right">
+                        <div class="burgers__title">
+                            <h2 class="burgers__title__text main-title">Dark beef <br> burger</h2>
+                        </div>
+                        <div class="burgers__desc">
+                            <p>2 Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                с добавлением экзотического соуса чураско.
+                            </p>
+                        </div>
+                        <div class="burgers__price-btn">
+                            <span>500</span>
+                            <p>рублей</p>
+                            <a href="#" class="btn header__btn--hover">Заказать</a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="burgers__item">
+                    <div class="burgers__composition">
+                        <div class="composition__logo">
+                            <img src="img/icons/burger.svg" alt="" class="composition__logo__img">
+                        </div>
+                        <div class="composition__title">
+                            <p>Состав</p>
+                        </div>
+                        <div class="burgers__composition-list">
+                            <div class="composition-list__item">
+                                <img src="img/icons/beef.svg" alt="" class="composition-list__img">                    
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Говядина</p>
+                                    <span class="composition-list__weigth">300 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/buns.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Булочки</p>
+                                    <span class="composition-list__weigth">100 г</span>  
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/salad.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Зелень</p>
+                                    <span class="composition-list__weigth">70 г</span>
+                                </div>
+                            </div> 
+                            <div class="composition-list__item">
+                                <img src="img/icons/sauce.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Соус</p>
+                                    <span class="composition-list__weigth">150 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/cucumber.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Овощи</p>
+                                    <span class="composition-list__weigth">200 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list__item">
+                                <img src="img/icons/cheese.svg" alt="" class="composition-list__img">
+                                <div class="composition-list__item__text">
+                                    <p class="composition-list__title">Сыр</p>
+                                    <span class="composition-list__weigth">80 г</span>
+                                </div>
+                            </div>
+                            <div class="composition-list-close">
+                                <a href="" class="composition-list-close__btn">
+                                    <div class="close__part-1"></div>
+                                    <div class="close__part-2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burgers__weigth">
+                        <div class="weigth__logo">
+                            <img src="img/icons/kkal.svg" alt="" class="weigth__logo__img">
+                        </div>
+                        <div class="weigth__variable">1200</div>
+                        <div class="weigth__title">ккал</div>
+                    </div>
+                    <div class="burgers__left">
+                        <img src="img/content/burger-img.png" alt="" class="burgers__img">
+                    </div>
+                    <div class="burgers__right">
+                        <div class="burgers__title">
+                            <h2 class="burgers__title__text main-title">Dark beef <br> burger</h2>
+                        </div>
+                        <div class="burgers__desc">
+                            <p>3 Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                с добавлением экзотического соуса чураско.
+                            </p>
+                        </div>
+                        <div class="burgers__price-btn">
+                            <span>500</span>
+                            <p>рублей</p>
+                            <a href="#" class="btn header__btn--hover">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burgers__item">
+                <div class="burgers__composition">
+                    <div class="composition__logo">
+                        <img src="img/icons/burger.svg" alt="" class="composition__logo__img">
+                    </div>
+                    <div class="composition__title">
+                        <p>Состав</p>
+                    </div>
+                    <div class="burgers__composition-list">
+                        <div class="composition-list__item">
+                            <img src="img/icons/beef.svg" alt="" class="composition-list__img">                    
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Говядина</p>
+                                <span class="composition-list__weigth">300 г</span>
+                            </div>
+                        </div>
+                        <div class="composition-list__item">
+                            <img src="img/icons/buns.svg" alt="" class="composition-list__img">
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Булочки</p>
+                                <span class="composition-list__weigth">100 г</span>  
+                            </div>
+                        </div>
+                        <div class="composition-list__item">
+                            <img src="img/icons/salad.svg" alt="" class="composition-list__img">
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Зелень</p>
+                                <span class="composition-list__weigth">70 г</span>
+                            </div>
+                        </div> 
+                        <div class="composition-list__item">
+                            <img src="img/icons/sauce.svg" alt="" class="composition-list__img">
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Соус</p>
+                                <span class="composition-list__weigth">150 г</span>
+                            </div>
+                        </div>
+                        <div class="composition-list__item">
+                            <img src="img/icons/cucumber.svg" alt="" class="composition-list__img">
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Овощи</p>
+                                <span class="composition-list__weigth">200 г</span>
+                            </div>
+                        </div>
+                        <div class="composition-list__item">
+                            <img src="img/icons/cheese.svg" alt="" class="composition-list__img">
+                            <div class="composition-list__item__text">
+                                <p class="composition-list__title">Сыр</p>
+                                <span class="composition-list__weigth">80 г</span>
+                            </div>
+                        </div>
+                        <div class="composition-list-close">
+                            <a href="" class="composition-list-close__btn">
+                                <div class="close__part-1"></div>
+                                <div class="close__part-2"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burgers__weigth">
+                    <div class="weigth__logo">
+                        <img src="img/icons/kkal.svg" alt="" class="weigth__logo__img">
+                    </div>
+                    <div class="weigth__variable">1200</div>
+                    <div class="weigth__title">ккал</div>
+                </div>
+                <div class="burgers__left">
+                    <img src="img/content/burger-img.png" alt="" class="burgers__img">
+                </div>
+                <div class="burgers__right">
+                    <div class="burgers__title">
+                        <h2 class="burgers__title__text main-title">Dark beef <br> burger</h2>
+                    </div>
+                    <div class="burgers__desc">
+                        <p>4 Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                            с добавлением экзотического соуса чураско.
+                        </p>
+                    </div>
+                    <div class="burgers__price-btn">
+                        <span>500</span>
+                        <p>рублей</p>
+                        <a href="#" class="btn header__btn--hover">Заказать</a>
+                    </div>
+                </div>
+                </div>
+                
             </div> 
+            <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+            <script src="js/burgers-slider.js"></script>
         </div>
     </section>
     <section class="team section">
@@ -248,7 +520,7 @@
                             </div>
                         </div>
                     </li>
-                    <script src="js/jquery-3.3.1.min.js"></script>
+                   
                     <script src="js/team-members.js"></script>    
                 </ul>
             </div>
@@ -587,6 +859,7 @@
             </div>
         </footer>
     </div>
+    
 </body>
 </html>
  
