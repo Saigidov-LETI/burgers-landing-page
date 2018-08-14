@@ -1,0 +1,101 @@
+.we {
+    display: flex;
+    background-image: url(../img/bg/we-section-bg.jpg);
+    background-size: 100% 100%;
+
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/we-bg.jpg);
+    }
+
+    @include phones {
+        display: block;
+        background-image: url(../img/bg/bg-for-phones/we-bg.jpg);
+    }
+}
+
+.wrapper-we {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+        justify-content: flex-start;
+        padding-top: 25%;
+    }
+
+    @include phones {
+        justify-content: center;
+        padding-top: 0;
+        padding: 0 10px;
+    }
+}
+
+.we__title__text {
+    color: #2f3234;
+    text-align: center;
+}
+
+.we__list {
+    display: flex;
+    margin-top: 5%;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.we__list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-right: 1%;
+
+    @include phones {
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 15%;
+        margin-right: 0;
+    }
+}
+
+.we__list__item__img {
+    margin-bottom: 5%;
+    display: flex;
+    
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+.we__list__item__title {
+    color: #2f3234;
+    font-family: lifehack;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    
+    @include phones {
+        position: absolute; 
+        top: 0;
+        left: 26%;
+
+    }
+}
+
+.we__list__item__desc {
+    color: #2f3234;
+    font-size: rem(14px);
+    font-family: ubuntu;
+    text-align: center;
+    line-height: 2;
+    display: flex;
+
+    @include phones {
+        text-align: left;
+        position: absolute;
+        left: 26%;
+        top: 40%;
+        line-height: 1.42;
+    }
+}

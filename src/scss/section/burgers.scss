@@ -1,0 +1,409 @@
+.burgers {
+    background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+}
+
+.owl-carousel.owl-loaded {
+    margin: auto;
+}
+
+.owl-stage-outer {
+    padding: 100px 0;
+    
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+.owl-carousel .owl-stage {
+    align-items: center;
+    display: flex;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -4%;
+    top: 50%;
+    transform: rotate(90deg);
+
+    @include tablets {
+        left: 10px;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    top: 50%;
+    right: -4%;
+    transform: rotate(-90deg);
+    position: absolute;
+
+    @include tablets {
+        right: 10px;
+    }
+}
+
+.wrapper-burgers {
+    display: flex;
+    flex: 1;
+}
+
+.burgers__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgers__item {
+    display: flex;
+    position: relative;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.burgers__composition {
+    position: absolute;
+    left: 5px;
+    top: -95px;
+    background-color: #f08c33;
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+    padding: 1.49% 2.34% 0 2.34%;
+    cursor: pointer;
+    
+    &:hover {
+       background-color: #e35028; 
+    }
+
+    @include tablets {
+        left: 1%;
+    }
+
+    @include phones {
+        left: 0;
+    }
+}
+
+.composition__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.composition__title {
+    font-family: gagalin;
+    font-size: rem(14px);
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.composition-list {
+    display: none;
+    background-color: #fef8ec;
+    border-radius: 5px;
+    position: absolute;
+    opacity: .9;      
+    top: 0;
+    left: 90px;
+    width: rem(300px);
+
+    @include tablets {
+        left: 91px;
+        width: 403%;
+    }
+
+    @include phones {
+        left: 67px;
+        width: 383px;
+    }
+
+    &--active {
+        display: block;
+    }
+}
+
+// .burgers__composition:hover .composition-list {
+//     display: block;
+
+//     @include phones {
+//         display: none;
+//     }
+// }
+
+.composition-list__item {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+        margin-top: .5rem;
+    }
+
+    &:nth-child(6) {
+        margin-bottom: .5rem;
+    }
+}
+
+.composition-list__item:first-child .composition-list__title {
+    padding-left: 4px;
+}
+
+.composition-list__item:nth-child(2) .composition-list__title {
+    padding-left: 3px;
+}
+
+.composition-list__item:nth-child(3) .composition-list__title {
+    padding-left: 10px;
+}
+
+.composition-list__item:nth-child(4) .composition-list__title  {
+    padding-left: 8px;
+}
+
+.composition-list__item:nth-child(5) .composition-list__title {
+    padding-left: 5px;
+}
+
+.composition-list__item:nth-child(6) .composition-list__title {
+    padding-left: 9px;
+}
+
+.composition-list__item:nth-child(2) .composition-list__img {
+    margin-left: -3px;
+}
+
+.composition-list__img {
+    padding: 0 9.259%;
+    display: block;
+    width: 100px !important;
+    height: 50px;    
+  
+}   
+
+.composition-list__item__text {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    padding-right: 7.407%;
+    color: #000;
+    font-size: rem(14px);
+    font-family: ubuntu;
+    font-weight: 500;
+
+    @include tablets {
+        padding-right: 20%;
+    }
+}
+
+.composition-list__weigth {
+    color: #000;
+    font-size: rem(14px);
+    font-family: ubuntu;
+    font-weight: 300;
+}
+
+.composition-list-close {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    position: absolute;
+    right: 8px;
+    transform: rotate(45deg);
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.close__part {
+    &-1 {
+        @include tablets {  
+            width: 20px;
+            height: 4px;
+            border-radius: 5px;
+            background-color: rgb(227, 80, 40);              
+        }
+    }
+    &-2 {
+        @include tablets {
+            width: 4px;
+            height: 20px;
+            position: absolute;
+            right: 13px;
+            border-radius: 5px;
+            background-color: rgb(227, 80, 40);          
+        }
+    }
+}
+
+.burgers__weigth {
+    width: 60px;
+    height: 60px; 
+    position: absolute;
+    bottom: -65px;
+    margin-left: 3px;
+    font-family: gagalin;
+    font-size: rem(20px);
+
+    @include tablets {
+        right: 0;
+        top: -12%;
+        margin-left: 0;
+    }
+
+    @include phones {
+        right: 0;
+        top: -13%;
+        margin-left: 0;
+    }
+}
+
+.weigth__variable {
+    position: absolute;
+    top: 25px;
+    left: 14px;
+}
+
+.weigth__title {
+    font-size: rem(14px);
+    text-align: center;
+}
+
+.burgers__content {
+    display: flex;
+    margin-left: 5px;
+    
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+    }
+}
+
+.burgers__left {
+    display: flex;
+    flex: 1;
+    padding-right: 15px;
+    // margin-right: 11%;
+
+    @include tablets {
+        padding-bottom: 5%;
+        padding-right: 0;
+        width: 85%;
+
+    }
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.burgers__img {   
+    max-height: 363px;
+    // position: absolute;
+    // top: 3%;
+
+    @include phones {
+        width: 80%;
+        height: 50%;
+    }
+}
+
+.owl-carousel .owl-item img {  
+    // width: auto !important; 
+}
+
+.burgers__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    @include tablets {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.burgers__title {
+    @include tablets {
+        width: 85%;
+        text-align: center;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.burgers__title__text {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 9%;
+
+    @include tablets {
+        margin-bottom: 7%;
+    }
+}
+
+.burgers__desc {
+    font-size: rem(14px);
+    line-height: 1.5;
+    font-weight: 300; 
+    
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        width: 80%;
+    }
+
+}
+
+.burgers__desc p {
+    margin-bottom: 6%;
+}
+
+.burgers__price-btn {
+    font-family: gagalin;
+    color: #e35028;
+    display: flex;
+    align-items: flex-end;
+}
+
+.burgers__price-btn span {
+    font-size: rem(72px);
+    line-height: 1;
+    padding-right: 10px;
+}
+
+.burgers__price-btn {
+    font-size: rem(30px);
+    padding-right: 30px;
+
+    a {
+        margin-left: 1.5rem;
+
+        @include tablets {
+            margin-left: 1.5rem;
+        }
+        
+    }
+}

@@ -1,0 +1,12 @@
+.map {
+    display: block;
+    height: 94%;
+    width: 100%; 
+    
+    @include phones {
+        height: 86%;
+    }
+    
+}
+
+  

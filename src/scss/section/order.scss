@@ -1,0 +1,279 @@
+.order {
+    position: relative;
+    background-image: url(../img/bg/order-section-bg.jpg);
+    display: flex;
+
+    @include tablets {
+        background-image: url(../img/bg/bg-for-tablets/order-bg.jpg);
+    }
+
+    @include phones {
+        background-image: url(../img/bg/bg-for-phones/order-bg.jpg);
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(47, 50, 52, .92);
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content {
+    width: 196px;
+    height: 106px;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    font: 14px ubuntu;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 20px;
+  }
+  
+  .close {
+    top: 50%;
+    position: absolute;
+  }
+  
+.wrapper-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    @include phones {
+        padding: 0 10px;
+    }
+}
+
+.order__title {
+    padding-bottom: 5%;
+    text-align: center;
+}
+  
+.order-form {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label {
+        font-family: ubuntu;
+        font-weight: 300;
+        font-size: rem(14px);
+        margin-bottom: 3.619%;
+    }
+
+    input[type="text"], input[type="tel"] {
+        height: 35px;
+        border-radius: 5px;
+        border: transparent;
+        padding-left: 12px;
+        font-family: ubuntu;
+        font-weight: 300;
+        font-size: rem(14px);
+    }
+
+    input, textarea {
+        &:focus {
+            border: 2px solid rgb(249, 180, 59);
+        }
+    }
+}
+
+.left-side-form, .right-side-form {
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+
+    @include tablets {
+        width: 65%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.26%;
+
+    &__name {
+        width: 48%;
+    }
+
+    &__name, &__tel, &__street, &__house {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__street {
+        width: 100%;
+    }
+}
+
+.form-row__house {
+    width: 22%;
+}
+
+.form-row__comment {
+    width: 100%;
+}
+
+.comment__text {
+    resize: none;
+    margin-top: 6px;
+    font-family: ubuntu;
+    font-weight: 300;
+    font-size: 0.875rem;
+    width: 100%;
+    height: 110px;
+    border-radius: 5px;
+    padding: 2% 2%;
+}
+
+.row-pay {
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+.form-row__pay {
+    display: flex;
+    
+    @include phones {
+        // justify-content: center;
+        // align-items: center;
+    }
+}
+
+.radio, .checkbox {
+    cursor: pointer;
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+.radio-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radio-btn {
+    position: relative;
+}
+
+.radio-btn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFF;
+    top: 2px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background:  rgb(227, 80, 40);
+        opacity: 0;
+        transition: .2s;
+    }
+}
+
+.radio input:checked + .radio-btn:after {
+    opacity: 1;
+}
+
+.radio-text {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.checkbox__input {
+    position: absolute;
+} 
+
+.checkbox__btn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #FFF;
+
+    &:after {
+        display: inline-block;
+        content: url(../img/content/checkbox.jpg);
+        position: relative;
+        top: -2px;
+        left: 2px;
+        transition: .2s;
+        opacity: 0;
+    }
+}
+
+.checkbox__text {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.checkbox input:checked + .checkbox__btn:after {
+    opacity: 1;
+}
+
+.form-btn-submit {
+    border: none;
+    transition: all .3s;
+
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+.form-btn-reset {
+    border: none;
+    background-color: transparent;
+    color: #fff; 
+
+    &:hover {
+        color: #9e9c9c;
+        transition: all .3s;
+    }
+}
+
+ 
+ 
+  
+
